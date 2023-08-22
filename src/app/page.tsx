@@ -1,7 +1,9 @@
-import dayjs from 'dayjs';
+import { getAnimeList } from './api/dataCrawler';
 
 const Home = async () => {
-  return <div>Anime Streaming</div>;
+  getAnimeList().then(res => console.log(res, 'res'));
+
+  return <div>Hi there</div>;
 };
 
 export default Home;
